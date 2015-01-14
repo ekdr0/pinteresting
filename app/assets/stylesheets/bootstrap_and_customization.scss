@@ -1,6 +1,16 @@
-$body-bg: #fff;
-$navbar-inverse-bg: #2c3e50;
-$navbar-inverse-link-color: rgba(255,255,255,.8);
-$brand-primary: orange;
+$body-bg: #ecf0f1;
+$navbar-default-bg: #fff;
+$navbar-default-link-color: tomato;
+$brand-primary: tomato;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$jumbotron-bg: #fff;
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
