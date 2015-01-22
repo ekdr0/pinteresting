@@ -5,6 +5,7 @@ $brand-primary: tomato;
 $font-family-sans-serif: 'Open Sans', sans-serif;
 $jumbotron-bg: #fff;
 
+@import "bootstrap-sprockets";
 @import 'bootstrap';
 
 .center {
