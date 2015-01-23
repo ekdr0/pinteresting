@@ -6,7 +6,8 @@ class PinsController < ApplicationController
   respond_to :html
 
   def index
-    @pins = Pin.all
+    #reversed because the newest pin's were coming in last and I wanted them first
+    @pins = Pin.all.order("created_at DESC")
     respond_with(@pins)
   end
 
