@@ -7,7 +7,7 @@ class PinsController < ApplicationController
 
   def index
     #reversed because the newest pin's were coming in last and I wanted them first
-    @pins = Pin.all.order("created_at DESC")
+    @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 3)
     respond_with(@pins)
   end
 
